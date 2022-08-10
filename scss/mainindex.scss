@@ -1,0 +1,28 @@
+/* index */
+.main-info{
+    text-align: center; 
+    justify-content: center;
+    div{ 
+        display: inline-block;
+    }
+}  
+
+.index-letras{   
+    color:$letrasmaingeneral;
+    font-style: italic; 
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+}
+#index-gw{
+    text-align: center;
+    color: $letrasmaingeneral;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+}
+    
+.index-img{ gap:5rem;
+    &:hover{
+        height: 280px;
+        width:500px ;    
+    }
+}
+
