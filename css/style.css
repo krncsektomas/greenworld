@@ -116,7 +116,7 @@ header nav{
 }
 .index-img{ gap:5rem;
 }
-.main-img:hover{
+.index-img:hover{
     height: 280px;
     width:500px ;    
 }
