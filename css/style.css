@@ -55,12 +55,12 @@ header nav{
 .navbar-toggler {
   color: #014b37; }
 
-.logo-img {
+.logo-img, .footer .footer-img {
   width: 160px;
   height: 70px;
   padding: 1px 40px;
   line-height: 80px; }
-  .logo-img:hover {
+  .logo-img:hover, .footer .footer-img:hover {
     width: 190px;
     height: 80px; }
 
@@ -70,11 +70,6 @@ header nav{
   background-color: white;
   padding: 1rem 5rem;
   border-top: solid black; }
-  .footer .footer-img {
-    width: 160px;
-    height: 70px;
-    padding: 1px 40px;
-    line-height: 80px; }
   .footer .logo-social {
     width: 30px;
     height: 30px;

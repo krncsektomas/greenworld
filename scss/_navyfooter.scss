@@ -69,10 +69,7 @@ header nav{
     padding:1rem 5rem; 
     border-top: solid black; 
     .footer-img{ 
-        width: $anchologo;
-        height: $altologo;
-        padding: 1px 40px;
-        line-height: 80px;
+        @extend .logo-img,
     }  
     .logo-social{ 
         width:30px;
