@@ -3,57 +3,30 @@
   padding: 0;
   box-sizing: border-box; }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #014b37; }
 
-/* HEADER 
- header{
-    
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding:1rem 0rem;
-    background-color: white;
-    border-bottom:  3px solid black;
-    border-top: solid black;
-    position: sticky; 
-    top: 0;
-    overflow: hidden;
-}
-header nav{
-    width: 90%;
-   
-    margin:auto;
-   
-}
-.header-menu{
-    list-style-type:none;
-    text-align: center;
-}
-.header-menu li{
-    display: inline-block;
-    margin: 1rem 2rem;
-    
-}*/
 /* nav */
 .navbar {
   border-bottom: 3px solid black;
   border-top: solid black; }
-
-.nav-link {
-  text-decoration: none;
-  color: #014b37;
-  font-size: x-large;
-  font-style: italic;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-weight: bold; }
-  .nav-link:hover {
-    font-size: xx-large; }
-
-.navbar-toggler {
-  color: #014b37; }
+  .navbar .navbar-toggler {
+    color: #014b37; }
+  .navbar .nav-link {
+    text-decoration: none;
+    color: #014b37;
+    font-size: x-large;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold; }
+    .navbar .nav-link:hover {
+      font-size: xx-large; }
 
 .logo-img, .footer .footer-img {
   width: 160px;
@@ -67,6 +40,8 @@ header nav{
 /* FOOTER */
 .footer {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: white;
   padding: 1rem 5rem;
   border-top: solid black; }
@@ -77,6 +52,9 @@ header nav{
     .footer .logo-social:hover {
       width: 40px;
       height: 40px; }
+  .footer h5 {
+    text-transform: uppercase;
+    font-weight: 700; }
 
 /* index */
 .main-info {
@@ -84,42 +62,20 @@ header nav{
   justify-content: center; }
   .main-info div {
     display: inline-block; }
-
-.index-letras {
-  color: white;
-  font-style: italic;
-  font-size: large;
-  font-family: Georgia, 'Times New Roman', Times, serif; }
-
-#index-gw {
-  text-align: center;
-  color: white;
-  font-family: Georgia, 'Times New Roman', Times, serif; }
-
-.index-img {
-  gap: 5rem; }
-  .index-img:hover {
-    height: 280px;
-    width: 500px; }
-
-#main_contacto {
-  padding: 100px; }
-
-.contactos-general {
-  width: auto;
-  height: auto;
-  text-align: center;
-  color: white;
-  font-style: italic;
-  font-family: Georgia, 'Times New Roman', Times, serif; }
-
-#boton-enviar {
-  border-top-style: groove; }
-
-#contacto {
-  font-weight: bold;
-  font-size: x-large;
-  text-align: center; }
+  .main-info .index-letras {
+    color: white;
+    font-style: italic;
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif; }
+  .main-info .index-gw {
+    text-align: center;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif; }
+  .main-info .index-img {
+    gap: 5rem; }
+    .main-info .index-img:hover {
+      height: 280px;
+      width: 500px; }
 
 /* SERVICIOS */
 .card-title {
@@ -129,12 +85,20 @@ header nav{
   text-align: center; }
 
 .card {
-  width: 90%; }
+  width: 90%;
+  margin: 4%; }
+  .card .card-img-top {
+    max-width: 100%;
+    max-height: 30%; }
+  .card .big-img {
+    height: 400px; }
 
 /* GALERIA */
 .galeria {
   font-style: italic;
   font-family: Georgia, 'Times New Roman', Times, serif; }
+  .galeria h4 {
+    text-align: center; }
 
 #galeria-portada {
   text-align: center; }
@@ -211,6 +175,9 @@ header nav{
   font-style: italic;
   font-weight: 600;
   font-family: Georgia, 'Times New Roman', Times, serif; }
+  .parrafo-nosotros p {
+    text-align: justify;
+    letter-spacing: 1px; }
 
 #gw-nos {
   justify-content: center;
@@ -220,23 +187,74 @@ header nav{
 
 .foto1 {
   grid-area: foto1;
-  width: 90%; }
-
-.f1 {
   width: 100%;
-  height: 90%;
-  justify-content: center; }
+  height: 100%; }
+  .foto1 .f1 {
+    width: 100%;
+    height: 90%;
+    margin: 0 auto;
+    justify-content: center; }
+
+#main_contacto {
+  padding: 100px; }
+
+.contactos-general {
+  width: auto;
+  height: auto;
+  text-align: center;
+  color: white;
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif; }
+
+#boton-enviar {
+  border-top-style: groove; }
+
+#contacto {
+  font-weight: bold;
+  font-size: x-large;
+  text-align: center; }
 
 /* media  */
 @media only screen and (max-width: 768px) {
-  /* header nav footer */ }
+  /* header nav footer */
+  .main-info .index-img {
+    margin-bottom: 3%; }
+  /*servicios*/
+  .card .card-img-top {
+    max-height: 50%; }
+  .card .big-img {
+    height: 200px; } }
 
 @media only screen and (max-width: 480px) {
-  .nav {
-    width: 100%; }
+  .nav-link {
+    font-size: small;
+    text-align: center; }
   .index-img {
     width: 80%; }
-  /* servicios */
-  .card {
-    width: 90%; }
-  /* galeria */ }
+  /* nosotros */
+  .main-nosotros {
+    grid-template-rows: 200px 300px; }
+  .parrafo-nosotros p {
+    text-align: justify;
+    font-size: medium; }
+  .foto1 {
+    margin: 5% auto;
+    width: 100%;
+    height: 80%; }
+    .foto1 .f1 {
+      width: 100%;
+      height: 90%;
+      margin: 0 auto;
+      justify-content: center; }
+  /*footer*/
+  footer {
+    width: 100%;
+    flex-wrap: wrap; }
+    footer .box-socialmedia {
+      display: flex;
+      margin: 5%; }
+    footer h5 {
+      width: 100%;
+      margin: 2%;
+      font-size: medium;
+      text-align: center; } }

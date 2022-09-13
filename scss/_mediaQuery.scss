@@ -1,0 +1,67 @@
+/* media  */
+@media only screen and (max-width:768px) {
+    /* header nav footer */
+    .main-info{
+        .index-img{
+            margin-bottom: 3%;
+        }
+    }
+    /*servicios*/
+    .card{
+        .card-img-top{
+            max-height: 50%;
+        }
+        .big-img{
+            height: 200px;
+        }
+    }    
+}
+
+@media only screen and (max-width:480px) {
+    .nav-link{
+        font-size: small;
+        text-align: center;
+    }
+    .index-img {
+        width: 80%;
+    }
+
+    /* nosotros */
+    .main-nosotros{
+        grid-template-rows: 200px 300px;       
+    }
+    .parrafo-nosotros{
+        p{
+            text-align: justify;
+            font-size: medium;
+        }
+    }
+    .foto1{
+        margin: 5% auto;
+        width: 100%;
+        height: 80%;
+        .f1{
+            width: 100%;
+            height: 90%;
+            margin: 0 auto;
+            justify-content: center;    
+        }
+    }
+    
+    /*footer*/
+    footer{
+        width: 100%;
+        flex-wrap: wrap;
+
+        .box-socialmedia{
+            display: flex;
+            margin: 5%;
+        }
+        h5{
+            width: 100%;
+            margin: 2%;
+            font-size: medium;
+            text-align: center;
+        }
+    } 
+}
